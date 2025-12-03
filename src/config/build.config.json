@@ -1,0 +1,54 @@
+{
+	"app": {
+		"name": "VibePlay",
+		"displayName": "VibePlay",
+		"version": "1.0.0",
+		"versionCode": 1,
+		"buildNumber": "1",
+		"bundleId": "com.gtech.vibeplay.mobile"
+	},
+	"ios": {
+		"scheme": "VibePlay",
+		"workspace": "ios/VibePlay.xcworkspace",
+		"configuration": {
+			"debug": "Debug",
+			"release": "Release"
+		},
+		"teamId": "PN2S4FKKMR",
+		"bundleIdentifier": "com.gtech.vibeplay.mobile",
+		"signing": {
+			"certificate": "ios/GTECH CORPORATION.p12",
+			"certificatePassword": "admin",
+			"provisioningProfile": "ios/XCVibeplay.mobileprovision",
+			"provisioningProfileSpecifier": "XCVibeplay",
+			"exportOptionsPlist": "ios/exportOptions.plist"
+		}
+	},
+	"android": {
+		"applicationId": "com.gtech.vibeplay.mobile",
+		"module": "app",
+		"buildTypes": {
+			"debug": {},
+			"release": {
+				"minifyEnabled": false,
+				"proguardFiles": ["proguard-rules.pro"]
+			}
+		},
+		"signing": {
+			"keystorePath": "android/app/my-release-key.keystore",
+			"keystorePassword": "welcome",
+			"keyAlias": "my-key-alias",
+			"keyPassword": "welcome"
+		}
+	},
+	"scripts": {
+		"ios": {
+			"dev": "react-native run-ios --configuration Debug",
+			"release": "react-native run-ios --configuration Release"
+		},
+		"android": {
+			"dev": "react-native run-android --mode=debug",
+			"release": "react-native run-android --mode=release"
+		}
+	}
+}
